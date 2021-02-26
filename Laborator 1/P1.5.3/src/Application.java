@@ -1,4 +1,3 @@
-import office.Document;
 import office.DocumentManager;
 import office.Printer;
 import office.Worker;
@@ -17,8 +16,8 @@ public class Application {
             int delay = random.ints(1000, 3000).findFirst().getAsInt();
             workerList.add(new Worker(delay, documentManager));
         }
-        Printer printer = new Printer(1000, documentManager);
-
+        int delay = random.ints(1000, 3000).findFirst().getAsInt();
+        Printer printer = new Printer(delay, documentManager);
 
         for(Worker worker : workerList) {
             System.out.println("Star worker thread");

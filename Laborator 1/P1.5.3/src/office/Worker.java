@@ -16,9 +16,10 @@ public class Worker extends Thread {
     @Override
     public void run() {
         try {
-            for(int i = 0; i <= 2; i++) {
+            Random random = new Random();
+            int nrOfDocuments = random.nextInt(10);
+            for(int i = 0; i <= nrOfDocuments; i++) {
                 sleep(delay);
-                Random random = new Random();
                 Document document = new Document(random.nextInt(1000));
                 documentManager.elaborateDocument(document);
             }
