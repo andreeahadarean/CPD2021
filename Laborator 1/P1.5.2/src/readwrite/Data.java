@@ -1,22 +1,18 @@
 package readwrite;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Data {
 
-    FileWriter fileWriter;
-    PrintWriter printWriter;
-    Scanner reader;
+    File file;
     boolean writing = false;
 
-    public Data(File file) throws IOException {
-        this.fileWriter = new FileWriter(file.getName());
-        printWriter = new PrintWriter(fileWriter);
-        this.reader = new Scanner(file);
+    public Data(File file) {
+        this.file = file;
     }
 
     public synchronized void write(String sentence) {
@@ -29,13 +25,19 @@ public class Data {
                 e.printStackTrace();
             }
         }
-        printWriter.println(sentence);
-        System.out.println("Writing " + sentence);
+        try {
+            FileWriter fileWriter = new FileWriter(file.getName());
+            fileWriter.write(sentence);
+            fileWriter.close();
+            System.out.println("Writing " + sentence);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         writing = false;
         notifyAll();
     }
 
-    public synchronized String read() {
+    public synchronized String read() throws FileNotFoundException {
         while (writing) {
             try {
                 System.out.println("Data reader is waiting");
@@ -45,10 +47,11 @@ public class Data {
                 e.printStackTrace();
             }
         }
+        Scanner reader = new Scanner(file);
         StringBuilder stringBuilder = new StringBuilder();
         while (reader.hasNextLine()) {
             String sentence = reader.nextLine();
-            stringBuilder.append(reader.nextLine());
+            stringBuilder.append(sentence);
             System.out.println("Reading " + sentence);
         }
         notifyAll();

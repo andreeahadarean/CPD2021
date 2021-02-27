@@ -1,5 +1,7 @@
 package readwrite;
 
+import java.io.FileNotFoundException;
+
 public class Reader extends Thread {
 
     private long delay;
@@ -16,10 +18,9 @@ public class Reader extends Thread {
         try {
             while (!"End".equals(sentence)) {
                 sentence = data.read();
-                System.out.println("Reading " + sentence);
                 sleep(delay);
             }
-        } catch (InterruptedException e) {
+        } catch (InterruptedException | FileNotFoundException e) {
             e.printStackTrace();
         }
     }
