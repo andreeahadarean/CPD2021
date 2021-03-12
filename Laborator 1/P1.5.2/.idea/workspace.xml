@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d80c1263-71f0-47c4-b31e-8fd28996ca76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P1.5.2/readwrite/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P1.5.2/readwrite/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P1.5.2/readwrite/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P1.5.2/readwrite/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/readwrite/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/readwrite/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/readwrite/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/readwrite/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1.5.3" />
+    <property name="last_opened_file_path" value="D:/HPM/Linda/linda-rest-api/build.gradle" />
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -79,6 +74,12 @@
       <option name="presentableId" value="Default" />
       <updated>1614415530597</updated>
       <workItem from="1614415532079" duration="4660000" />
+      <workItem from="1614538791721" duration="18000" />
+      <workItem from="1614540581298" duration="13000" />
+      <workItem from="1614666256016" duration="633000" />
+      <workItem from="1614756076312" duration="495000" />
+      <workItem from="1614756606985" duration="2000" />
+      <workItem from="1614756672934" duration="19000" />
     </task>
     <servers />
   </component>
@@ -90,10 +91,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="190" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1614416523679" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1614417970559">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1614756686023">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1614417970559" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1614756686023" />
     <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1614420195986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -126,6 +127,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="225" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1614420195986" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1614756674389">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1614756674389" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
