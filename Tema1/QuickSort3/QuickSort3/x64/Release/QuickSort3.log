@@ -1,0 +1,9 @@
+﻿  pch.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  QuickSort3.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+d:\cti4\semestrul ii\cpd\cpd2021\tema1\quicksort3\quicksort3\quicksort3.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  QuickSort3.vcxproj -> D:\CTI4\Semestrul II\CPD\CPD2021\Tema1\QuickSort3\x64\Release\QuickSort3.exe
