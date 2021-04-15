@@ -33,13 +33,27 @@ public class ClientServerTest {
     }
 
     @Test
-    public void rentAFreeLocation() {
+    public void rentAnAvailableLocation() {
         Client client = new Client();
         client.startConnection("127.0.0.1", port);
-        String msg1 = client.sendMessage("rent");
-        String terminate = client.sendMessage(".");
+        String msg1 = client.sendMessage("rent, London, 2");
+        String terminate = client.sendMessage("thank you");
 
-        assertEquals("You can rent a location!", msg1);
+        assertEquals("You rented the location!", msg1);
+        assertEquals("Thank you!", terminate);
+        client.stopConnection();
+    }
+
+    @Test
+    public void rentARentedLocation() {
+        Client client = new Client();
+        client.startConnection("127.0.0.1", port);
+        String msg1 = client.sendMessage("rent, Berlin, 2");
+        String msg2 = client.sendMessage("rent, Paris, 2");
+        String terminate = client.sendMessage("thank you");
+
+        assertEquals("Location not available!", msg1);
+        assertEquals("You rented the location!", msg2);
         assertEquals("Thank you!", terminate);
         client.stopConnection();
     }

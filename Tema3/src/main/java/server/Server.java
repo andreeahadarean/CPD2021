@@ -64,17 +64,25 @@ public class Server {
                     String[] messages = inputLine.split(", ");
                     if("post".equals(messages[0])) {
                         locationManager.addLocation(messages[1]);
-                        locationManager.printLocations();
                         out.println("We added your offer!");
                         System.out.println("We added your offer!");
-                    } else if ("rent".equals(inputLine)) {
-                        out.println("You can rent a location!");
-                        System.out.println("You can rent a location!");
+                        locationManager.printLocations();
+                    } else if ("rent".equals(messages[0])) {
+                        Location rented = locationManager.rentLocation(messages[1], Integer.parseInt(messages[2]));
+                        if(rented != null) {
+                            out.println("You rented the location!");
+                            System.out.println("You rented the location!");
+                        } else {
+                            out.println("Location not available!");
+                            System.out.println("Location not available!");
+                        }
+                        locationManager.printLocations();
+
                     }
                     else if ("thank you".equals(inputLine)) {
                         out.println("Thank you!");
                         System.out.println("Thank you!");
-                        break;
+                        System.out.println();
                     }
                 }
 

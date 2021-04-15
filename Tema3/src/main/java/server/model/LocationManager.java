@@ -13,7 +13,8 @@ public class LocationManager {
 
     public LocationManager() {
         this.locations.add(new Location("London", false, 0));
-        this.locations.add(new Location("Berlin", false, 0));
+        this.locations.add(new Location("Berlin", true, 5));
+        this.locations.add(new Location("Paris", false, 0));
     }
 
     public void addLocation(String city) {
@@ -27,14 +28,15 @@ public class LocationManager {
             if(!location.isRented())
                 availableCities.add(location.getCity());
         }).collect(Collectors.toList());
-        AtomicReference<Location> rented = null;
+        AtomicReference<Location> rented = new AtomicReference<>();
         if(availableCities.contains(city)) {
             locations.stream().peek(location -> {
-                if(location.getCity().equals(city))
+                if(location.getCity().equals(city)) {
+                    location.setRentPeriod(rentPeriod);
+                    location.setRented(true);
                     rented.set(location);
+                }
             }).collect(Collectors.toList());
-            rented.get().setRented(true);
-            rented.get().setRentPeriod(rentPeriod);
         }
         return rented.get();
     }
