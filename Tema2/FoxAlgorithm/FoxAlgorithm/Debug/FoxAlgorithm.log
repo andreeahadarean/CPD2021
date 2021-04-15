@@ -1,0 +1,4 @@
+﻿  FoxAlgorithm.cpp
+d:\cti4\semestrul ii\cpd\cpd2021\tema2\foxalgorithm\foxalgorithm\foxalgorithm.cpp(65): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\cti4\semestrul ii\cpd\cpd2021\tema2\foxalgorithm\foxalgorithm\foxalgorithm.cpp(58): warning C4101: 'status': unreferenced local variable
+  FoxAlgorithm.vcxproj -> D:\CTI4\Semestrul II\CPD\CPD2021\Tema2\FoxAlgorithm\Debug\FoxAlgorithm.exe

@@ -1,0 +1,4 @@
+﻿  CannonAlgorithm.cpp
+d:\cti4\semestrul ii\cpd\cpd2021\tema2\cannonalgorithm\cannonalgorithm\cannonalgorithm.cpp(100): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\cti4\semestrul ii\cpd\cpd2021\tema2\cannonalgorithm\cannonalgorithm\cannonalgorithm.cpp(62): warning C4101: 'id': unreferenced local variable
+  CannonAlgorithm.vcxproj -> D:\CTI4\Semestrul II\CPD\CPD2021\Tema2\CannonAlgorithm\Debug\CannonAlgorithm.exe
