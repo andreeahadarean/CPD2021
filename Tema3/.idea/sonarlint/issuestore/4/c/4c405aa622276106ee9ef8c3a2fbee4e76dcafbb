@@ -1,14 +1,20 @@
 
-R
-java:S1191"5Use classes from the Java API instead of Sun classes.(¢¤ÿ…8†ÃË/
-Z	java:S106<"9Replace this use of System.out or System.err by a logger.(Ø¶¹Ñşÿÿÿÿ8°Àå/
-o
-java:S1450-"RRemove the "out" field and declare it as a local variable in the relevant methods.(¨¥ÑÓ8†ÃË/
-U	java:S106?"9Replace this use of System.out or System.err by a logger.(íÎş½8ºæ/
->
-java:S2189""Add an end condition to this loop.(¤èÄ78†ÃË/
-Z	java:S106C"9Replace this use of System.out or System.err by a logger.(§ü©¥üÿÿÿÿ8âˆ×/
-n
-java:S1450."QRemove the "in" field and declare it as a local variable in the relevant methods.(»ğ¶ü8†ÃË/
+L
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ËÊû´/
 W
-java:S11614":Add the "@Override" annotation above this method signature(“–ış8†ÃË/
+java:S1161:":Add the "@Override" annotation above this method signature(“–ış8ùÀµ/
+o
+java:S14501"RRemove the "out" field and declare it as a local variable in the relevant methods.(¨¥ÑÓ8ËÊû´/
+{
+java:S1450"^Remove the "locationManager" field and declare it as a local variable in the relevant methods.(ô­âº8¹è»µ/
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(Ùû›Ğøÿÿÿÿ8óˆå¶/
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¯ºù¶/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(¢¤ÿ…8ËÊû´/
+>
+java:S2189""Add an end condition to this loop.(¤èÄ78ËÊû´/
+n
+java:S14502"QRemove the "in" field and declare it as a local variable in the relevant methods.(»ğ¶ü8ËÊû´/
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(±çåûÿÿÿÿ8Ñıš¶/
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(§ü©¥üÿÿÿÿ8Ñıš¶/
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(ø¿”¶ùÿÿÿÿ8ùÀµ/
