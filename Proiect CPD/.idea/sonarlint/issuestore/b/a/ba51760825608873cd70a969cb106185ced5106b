@@ -1,17 +1,13 @@
 
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Çµí‘8ôÀãóœ/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(’£´Àÿÿÿÿÿ8ôÀãóœ/
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(ÁığÈ8×¢â/
+]	java:S125"<This block of commented-out lines of code should be removed.(á®ßÕøÿÿÿÿ8ôÀãóœ/
+L
+java:S1066G"/Merge this if statement with the enclosing one.(ô¬éì8ôÀãóœ/
 f
-java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÙÏôŞıÿÿÿÿ8ôÀãóœ/
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(’£´Àÿÿÿÿÿ8ôÀãóœ/
-]	java:S125"<This block of commented-out lines of code should be removed.(á®ßÕøÿÿÿÿ8ôÀãóœ/
-U	java:S106>"9Replace this use of System.out or System.err by a logger.(½±ò¿8ôÀãóœ/
-X
-java:S1854"6Remove this useless assignment to local variable "sc".(Ø’ÃĞøÿÿÿÿ8ôÀãóœ/
-U	java:S106C"9Replace this use of System.out or System.err by a logger.(ÁığÈ8ôÀãóœ/
+java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÙÏôŞıÿÿÿÿ8ôÀãóœ/
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(½±ò¿8ôÀãóœ/
 7
 java:S1220""Move this file to a named package.8ôÀãóœ/
-L
-java:S1066:"/Merge this if statement with the enclosing one.(ô¬éì8ôÀãóœ/
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘8ôÀãóœ/
-I
-java:S1481"'Remove this unused "sc" local variable.(Ø’ÃĞøÿÿÿÿ8ôÀãóœ/

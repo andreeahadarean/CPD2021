@@ -1,0 +1,19 @@
+
+0
+java:S1220""Move this file to a named package.
+g
+java:S2095#"EUse try-with-resources or close this "Channel" in a "finally" clause.(‡î‰´ûÿÿÿÿ8çÂœ/
+e
+java:S2095""HUse try-with-resources or close this "Connection" in a "finally" clause.(“…§Ú8çÂœ/
+9
+java:S1116"Remove this empty statement.(²™î8éİù›/
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8¦Î/
+W	java:S125&"<This block of commented-out lines of code should be removed.(¦ôƒN8”Õ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¦ÏÌÜûÿÿÿÿ8Øè›/
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(öæšûÿÿÿÿ8çÂœ/
+\
+java:S1118
+":Add a private constructor to hide the implicit public one.(„ƒ×Æùÿÿÿÿ8éİù›/
+[
+java:S4719)"9Replace charset name argument with StandardCharsets.UTF_8(åıÙÆûÿÿÿÿ8çÂœ/
