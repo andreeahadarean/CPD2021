@@ -1,0 +1,16 @@
+
+]	java:S125""<This block of commented-out lines of code should be removed.(á®ßÕøÿÿÿÿ8Ÿ¿äóœ/
+I
+java:S1481"'Remove this unused "sc" local variable.(Ø’ÃĞøÿÿÿÿ8Ÿ¿äóœ/
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘8Ÿ¿äóœ/
+L
+java:S1066>"/Merge this if statement with the enclosing one.(ô¬éì8Ÿ¿äóœ/
+l
+java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(ÅèõĞùÿÿÿÿ8Ÿ¿äóœ/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(…Ä¨©ùÿÿÿÿ8Ÿ¿äóœ/
+7
+java:S1220""Move this file to a named package.8Ÿ¿äóœ/
+U	java:S106B"9Replace this use of System.out or System.err by a logger.(Œóóğ8Ÿ¿äóœ/
+X
+java:S1854"6Remove this useless assignment to local variable "sc".(Ø’ÃĞøÿÿÿÿ8Ÿ¿äóœ/

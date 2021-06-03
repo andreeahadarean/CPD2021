@@ -1,17 +1,0 @@
-
-7
-java:S1220""Move this file to a named package.8ñÁØğœ/
-L
-java:S1066:"/Merge this if statement with the enclosing one.(ô¬éì8²‰‹òœ/
-]	java:S125"<This block of commented-out lines of code should be removed.(á®ßÕøÿÿÿÿ8‡ìƒóœ/
-U	java:S106C"9Replace this use of System.out or System.err by a logger.(ÁığÈ8ñÁØğœ/
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘8²‰‹òœ/
-X
-java:S1854"6Remove this useless assignment to local variable "sc".(Ø’ÃĞøÿÿÿÿ8ñÁØğœ/
-U	java:S106>"9Replace this use of System.out or System.err by a logger.(É–…ô8ªÛÇòœ/
-I
-java:S1481"'Remove this unused "sc" local variable.(Ø’ÃĞøÿÿÿÿ8ñÁØğœ/
-f
-java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÙÏôŞıÿÿÿÿ8ñÁØğœ/
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ıî§¯ùÿÿÿÿ8êı òœ/
