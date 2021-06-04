@@ -1,29 +1,36 @@
+package sockets;
+
+import pubsub.PubSub;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Node1 {
+public class Node2 {
 
-    private static boolean hasToken = true;
+    private static boolean hasToken = false;
     private static LocalDateTime receivedTime = LocalDateTime.now();
-    private static LocalDateTime sendTime = receivedTime.plusSeconds(9);
+    private static LocalDateTime sendTime = LocalDateTime.now();
     private static final String NODE_1_TOPIC = "TOPIC_ONE";
     private static final String NODE_2_TOPIC = "TOPIC_TWO";
 
     public static void main(String[] args){
-        final Socket clientSocket;
+        final ServerSocket serverSocket ;
+        final Socket clientSocket ;
         final BufferedReader in;
         final PrintWriter out;
 
         try {
-            clientSocket = new Socket("127.0.0.1",5000);
+            serverSocket = new ServerSocket(5000);
+            clientSocket = serverSocket.accept();
             out = new PrintWriter(clientSocket.getOutputStream());
-            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            in = new BufferedReader (new InputStreamReader(clientSocket.getInputStream()));
 
             TimerTask sendTask = new TimerTask() {
                 @Override
@@ -31,7 +38,7 @@ public class Node1 {
                     //System.out.println(hasToken);
                     //System.out.println("***" + LocalDateTime.now().withNano(0) + " " + sendTime.withNano(0));
                     if(!hasToken && LocalDateTime.now().withNano(0).equals(sendTime.withNano(0).plusSeconds(1))) {
-                        System.out.println("Sending token to node 2 at: " + sendTime.withNano(0));
+                        System.out.println("Sending token to node 1 at: " + sendTime.withNano(0));
                         String msg = "token";
                         out.println(msg);
                         out.flush();
@@ -46,7 +53,7 @@ public class Node1 {
                         hasToken = false;
                     }
                     if(!hasToken) {
-                        PubSub.subscribe("Node 1", NODE_2_TOPIC);
+                        PubSub.subscribe("Node 2", NODE_1_TOPIC);
                     }
                 }};
             new Timer().scheduleAtFixedRate(checkTask, 0, 1000);
@@ -55,13 +62,13 @@ public class Node1 {
                 @Override
                 public void run() {
                     if(hasToken) {
-                        PubSub.publish("Node 1", NODE_1_TOPIC);
+                        PubSub.publish("Node 2", NODE_2_TOPIC);
                     }
                 }};
             new Timer().scheduleAtFixedRate(checkPublishOrSubscribe, 0, 1000);
 
-            Thread receiver = new Thread(new Runnable() {
-                String msg;
+            Thread receive= new Thread(new Runnable() {
+                String msg ;
                 @Override
                 public void run() {
                     try {
@@ -72,22 +79,25 @@ public class Node1 {
                                     hasToken = true;
                                     receivedTime = LocalDateTime.now();
                                     sendTime = receivedTime.plusSeconds(10);
-                                    System.out.println("Node 1 has the token at: " + receivedTime + " and will send it at " + sendTime);
+                                    System.out.println("Node 2 has the token at: " + receivedTime + " and will send it at " + sendTime);
                                 }
                             }
                             msg = in.readLine();
                         }
-                        System.out.println("Server out of service");
                         out.close();
                         clientSocket.close();
+                        serverSocket.close();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
             });
-            receiver.start();
-        }catch (IOException e){
+            receive.start();
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 }
